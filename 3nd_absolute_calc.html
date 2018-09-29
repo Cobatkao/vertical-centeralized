@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3nd_absolute_calc</title>
+  <link rel="stylesheet" href="./common.css">
+  <style type="text/css">
+    .parent {
+      position: relative;
+      background: #D15C61;
+      margin: 0 auto;
+      padding: 20px;
+      resize: both;
+    }
+    .child {
+      position: absolute;
+      /* 用top，left调整定位时，直接用calc减去宽高的一半 */
+      top: calc(50% - 75px);
+      left: calc(50% - 100px);
+      /*  同样子元素加上padding后，还得减去padding值
+      padding: 20px;
+       */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child fixedSize">calc()计算后，你看我水平垂直居中的没！</div>
+  </div>
+</body>
+</html>

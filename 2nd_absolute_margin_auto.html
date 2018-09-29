@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>absolute_margin_auto</title>
+  <link rel="stylesheet" href="./common.css">
+  <style type="text/css">
+    .parent {
+      position: relative;
+      background: #D15C61;
+      margin: 0 auto;
+      padding: 20px;
+      resize: both;
+    }
+    .child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      padding: 40px; /* 就算加上padding，也会自适应居中 */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child fixedSize">margin：auto后，你看我水平垂直居中的没！</div>
+  </div>
+</body>
+</html>

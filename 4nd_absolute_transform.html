@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>absolute_transform</title>
+  <link rel="stylesheet" href="./common.css">
+  <style type="text/css">
+    .parent {
+      position: relative;
+      background: #D15C61;
+      margin: 0 auto;
+      padding: 20px;
+      resize: both;
+    }
+    .child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">我没有固定高度，高度完全由内容撑起来，transform后，你看我水平垂直居中的没！</div>
+  </div>
+</body>
+</html>
