@@ -26,11 +26,15 @@
     仅适用于元素在视窗中垂直居中，因为vh是相对于视窗的高度。
 3. [flex](http://isaacgao.cn/vertical-centeralized/6nd_flex_box.html)
 
+4. [flex + margin: auto](http://isaacgao.cn/vertical-centeralized/9nd_flex_box_2.html)
+
+    测试后，居中元素是否有宽高都可以居中。原理在于，flex布局的包含容器内部子元素设置`margin: auto`会自动吸收额外的控件，所以居中元素在水平垂直方向上都实现完美居中。
+
     最简单的方法，**推荐！现代化的布局方案。**
-4. [table](http://isaacgao.cn/vertical-centeralized/8nd_table.html)
+5. [table](http://isaacgao.cn/vertical-centeralized/8nd_table.html)
   
     古老的页面布局方式，可以实现水平垂直居中，但是会增加很多冗余代码。
-5. [table-cell + 文本排版式](http://isaacgao.cn/vertical-centeralized/7nd_text_like.html)
+6. [table-cell + 文本排版式](http://isaacgao.cn/vertical-centeralized/7nd_text_like.html)
   
     文本式单独拆开来其实就是`inline-block`水平居中方案以及`table-cell`垂直居中方案的合用，也算是把文本排版的特性都利用了个遍了。
 
