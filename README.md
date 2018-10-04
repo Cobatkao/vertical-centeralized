@@ -36,6 +36,7 @@
     古老的页面布局方式，可以实现水平垂直居中，但是会增加很多冗余代码。
 6. [table-cell + 文本排版式](http://isaacgao.cn/vertical-centeralized/7nd_text_like.html)
   
+    **注意：被居中元素需要是Inline或inline block**
     文本式单独拆开来其实就是`inline-block`水平居中方案以及`table-cell`垂直居中方案的合用，也算是把文本排版的特性都利用了个遍了。
 
 
