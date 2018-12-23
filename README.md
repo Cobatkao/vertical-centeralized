@@ -2,11 +2,11 @@
 
 互联网上关于垂直居中的文章和总结太多了，代码和表述水平层次不齐。常常看过一遍就会忘记，好记性不如烂笔头，还是少说点废话，直接都实现一遍，供日后复看！
 
-以下针对是否已知**居中元素宽高**进行分类
+以下针对**是否已知居中元素宽高**进行分类
 
-# 已知固定宽高
+# **已知固定宽高**
 
-1. [absolute + negative margin](http://isaacgao.cn/vertical-centeralized/1st_absolute_negative_margin.html)
+1. [absolute + negative-margin](http://isaacgao.cn/vertical-centeralized/1st_absolute_negative_margin.html)
 2. [absolute + calc()](http://isaacgao.cn/vertical-centeralized/3nd_absolute_calc.html)
   
     `calc`可以少写两个样式，但是它是CSS3属性，[兼容性较差](https://caniuse.com/#search=calc)，IE目前仅兼容到IE11，firefox，chrome，safari都完美兼容。
@@ -16,9 +16,9 @@
 
 
 
-# 未知宽高
+# **未知宽高**
 
-1. [absolute_transform](http://isaacgao.cn/vertical-centeralized/4nd_absolute_transform.html)
+1. [absolute_css3-transform](http://isaacgao.cn/vertical-centeralized/4nd_absolute_transform.html)
 
     `translate()`属性中的百分比是相对于居中元素自身，因此可以做到居中。
 2. [vh + translateY](http://isaacgao.cn/vertical-centeralized/5nd_viewport_relative.html)
@@ -26,7 +26,7 @@
     仅适用于元素在视窗中垂直居中，因为vh是相对于视窗的高度。
 3. [flex](http://isaacgao.cn/vertical-centeralized/6nd_flex_box.html)
 
-4. [flex + margin: auto](http://isaacgao.cn/vertical-centeralized/9nd_flex_box_2.html)
+4. [flex/grid + margin: auto](http://isaacgao.cn/vertical-centeralized/9nd_flex_box_2.html)
 
     测试后，居中元素是否有宽高都可以居中。原理在于，flex布局的包含容器内部子元素设置`margin: auto`会自动吸收额外的控件，所以居中元素在水平垂直方向上都实现完美居中。
 
